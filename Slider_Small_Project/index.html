@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Castomer Reviews</h1>
+        <div class="review-box">
+            <div id="slide">
+                <div class="card">
+                    <div class="profile">
+                        <img src="./pic1.jpg" >
+                        <div>
+                            <h3>Romi key</h3>
+                            <p>Modeling</p>
+                        </div>
+                   
+                    </div>                   
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam facilis quae optio consequatur, eveniet perspiciatis debitis sapiente magnam amet rem quis, quaerat sint architecto. Quos totam veritatis unde ullam voluptate.</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="./pic2.jpg" >
+                        <div>
+                            <h3>Decon Ray</h3>
+                            <p>Actor</p>
+                        </div>
+                   
+                    </div>                   
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam facilis quae optio consequatur, eveniet perspiciatis debitis sapiente magnam amet rem quis, quaerat sint architecto. Quos totam veritatis unde ullam voluptate.</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="./pic3.jpg" >
+                        <div>
+                            <h3>Sesso Deo</h3>
+                            <p>Student</p>
+                        </div>
+                   
+                    </div>                   
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam facilis quae optio consequatur, eveniet perspiciatis debitis sapiente magnam amet rem quis, quaerat sint architecto. Quos totam veritatis unde ullam voluptate.</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="./pic4.jpg" >
+                        <div>
+                            <h3>Kark Lio</h3>
+                            <p>Teaching</p>
+                        </div>
+                   
+                    </div>                   
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam facilis quae optio consequatur, eveniet perspiciatis debitis sapiente magnam amet rem quis, quaerat sint architecto. Quos totam veritatis unde ullam voluptate.</p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <img src="./up-arrow.png" id="upArrow">
+                <img src="./down-arrow.png" id="downArrow">
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var slide = document.getElementById("slide");
+        var upArrow = document.getElementById("upArrow");
+        var downArrow = document.getElementById("downArrow");
+
+        let x=5;
+        upArrow.onclick = function(){
+            if(x > "-600"){
+                x = x - 300;
+            slide.style.top = x + "px";
+            }
+           
+        }
+        downArrow.onclick = function(){
+            if(x < 0) {
+                x = x + 300;
+            slide.style.top = x + "px";
+            }
+           
+        }
+
+
+    </script>
+
+</body>
+</html>
